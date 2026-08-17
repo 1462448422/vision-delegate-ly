@@ -1,0 +1,45 @@
+{
+  "name": "@deepseek-ai/dsh-vision-delegate",
+  "description": "Vision delegation: an image-capable model describes attached images for text-only routes",
+  "version": "0.1.0-rc.5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1462448422/vision-delegate-ly.git"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./invariant": {
+      "types": "./lib/types/invariant.d.ts",
+      "default": "./lib/invariant.js"
+    },
+    "./src/*": "./src/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/invariant.js",
+    "lib/types/**/*.d.ts"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/schemastery": "3.18.1",
+    "@deepseek-ai/dsh-agent": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-invariants": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.5"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": { "optional": true },
+    "@deepseek-ai/schemastery": { "optional": true },
+    "@deepseek-ai/dsh-agent": { "optional": true },
+    "@deepseek-ai/dsh-invariants": { "optional": true },
+    "@deepseek-ai/dsh-llm": { "optional": true }
+  }
+}
